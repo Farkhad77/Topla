@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>fcd5fdb9-1421-4c55-9217-d7765ef56934</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.*">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.*" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.16" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.11" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.12" />
+    <PackageReference Include="StackExchange.Redis" Version="3.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="System.Memory" Version="4.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Arenio.Application\Arenio.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Arenio.Infrastructure\Arenio.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Arenio.Persistence\Arenio.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

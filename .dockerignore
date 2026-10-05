@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+**/.vs/
+.git/
+.github/
+topla-web/node_modules/
+topla-web/dist/
+data/
+deploy/.env
+*.zip

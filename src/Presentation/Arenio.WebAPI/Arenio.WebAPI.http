@@ -1,0 +1,6 @@
+@Arenio.WebAPI_HostAddress = http://localhost:5077
+
+GET {{Arenio.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
